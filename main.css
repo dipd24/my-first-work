@@ -1,0 +1,114 @@
+.section-title {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.expertise-container{
+  background-image: url(./Rectangle\ 7.png);
+  width: 100%;
+}
+
+.expertises {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.expertise img {
+    width: 362px;
+    height: 471px;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.check-all-projects {
+    display: flex;
+    justify-content: center;
+}
+
+.check-all-projects button {
+    padding: 15px 50px;
+    background-color: var(--background-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: solid 2px white;
+    font-size: 30px;
+}
+
+.my-blogs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-blogs img{
+    width: 90%;
+    height: 90%;
+    gap: 50px;
+}
+
+.tag{
+    background-color: white;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin: 30px 0px;
+}
+
+.tag h1{
+    color: black;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-name{
+    display: flex;
+    gap: 20px;
+}
+
+.round-date{
+    width: 16px;
+    height: 16px;
+    background-color: blueviolet;
+    border-radius: 100%;
+}
+.round-name{
+    width: 16px;
+    height: 16px;
+    background-color: blue;
+    border-radius: 100%;
+}
+
+.blog-title{
+    margin: 30px 0px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .my-blogs{
+       flex-direction: column;   
+    }
+
+    .expertises {
+        flex-direction: column;
+    }
+    
+}
